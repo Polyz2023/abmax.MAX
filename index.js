@@ -15,7 +15,7 @@ const cors = require('cors'); // Импорт модуля cors
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('/root/modules/2024max/css/mxcss/version/1.0.0/online', (req, res) => {
+app.get('/root/modules/2024max/css/mxcss/version/1.0.1/online', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'MXCSS', 'mxcss.css'));
 });
 
