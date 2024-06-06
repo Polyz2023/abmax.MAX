@@ -19,6 +19,10 @@ app.get('/root/modules/2024max/css/mxcss/version/1.0.1/online', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'MXCSS', 'mxcss.css'));
 });
 
+app.get('/root/modules/2024max/js/mxjs/version/1.0.0/online', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'MXJS', 'mxjs.js'));
+});
+
 // Переместите обработчик маршрута '*' в конец
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
